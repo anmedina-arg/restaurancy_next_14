@@ -13,7 +13,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <header className="text-xl font-bold leading-[3rem]">Restaurancy</header>
         <main className="py-8">{children}</main>
         <footer className="text-center leading-[3rem] opacity-70">
-          © {new Date().getFullYear()} Restaurancy
+          © -
+          {` ${new Date().getDate()} / ${new Date().getMonth()} / ${new Date().getFullYear()} - `}
+          Restaurancy
         </footer>
       </body>
     </html>
